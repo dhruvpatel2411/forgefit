@@ -1,0 +1,529 @@
+
+/* Basic Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #ffffff;
+    color: #17233c;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: white;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #f28c28;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #17233c;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #f28c28;
+}
+
+.nav-button,
+.primary-btn {
+    background: #f28c28;
+    color: white;
+    padding: 13px 24px;
+    border-radius: 7px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 600px;
+    padding: 80px 8%;
+    background: #f4f7fc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.hero-content {
+    max-width: 580px;
+}
+
+.tagline,
+.section-tag {
+    color: #f28c28;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.2;
+    margin-bottom: 22px;
+}
+
+.hero-description {
+    color: #687386;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.secondary-btn {
+    padding: 13px 24px;
+    border: 2px solid #17233c;
+    color: #17233c;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero-stats {
+    display: flex;
+    gap: 45px;
+    margin-top: 55px;
+}
+
+.hero-stats h3 {
+    font-size: 25px;
+    color: #17233c;
+}
+
+.hero-stats p {
+    color: #687386;
+    margin-top: 6px;
+}
+
+/* Hero Visual */
+.hero-image {
+    width: 42%;
+    min-width: 280px;
+}
+
+.image-card {
+    min-height: 390px;
+    background: linear-gradient(135deg, #17233c, #344e79);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-icon {
+    font-size: 90px;
+    margin-bottom: 25px;
+}
+
+.image-card h2 {
+    font-size: 27px;
+}
+
+.image-card p {
+    margin-top: 12px;
+    color: #dce5f3;
+}
+
+.image-decoration {
+    width: 180px;
+    height: 180px;
+    border: 2px solid #f28c28;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -100px;
+    right: -50px;
+}
+
+/* About Section */
+.about,
+.courses,
+.contact {
+    padding: 90px 8%;
+    text-align: center;
+}
+
+.about h2,
+.courses h2,
+.contact h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.about > p:last-child,
+.contact > p:not(.section-tag) {
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.8;
+    color: #687386;
+}
+
+/* Courses */
+.courses {
+    background: #f4f7fc;
+}
+
+.course-container {
+    display: flex;
+    gap: 25px;
+    margin-top: 45px;
+}
+
+.course-card {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 12px;
+    flex: 1;
+    text-align: left;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.05);
+}
+
+.course-card h3 {
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.course-card p {
+    color: #687386;
+    line-height: 1.7;
+    margin-bottom: 22px;
+}
+
+.course-card a {
+    color: #f28c28;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
+/* Contact */
+.contact p {
+    margin-bottom: 25px;
+}
+
+/* Footer */
+footer {
+    background: #17233c;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Mobile Responsive Design */
+
+
+/* Course Card Hover Animation */
+.course-card {
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+/* Hero Image */
+.hero-image img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+/* Mobile Menu Button */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Mobile Responsive Design */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 20px 5%;
+        flex-wrap: wrap;
+        gap: 18px;
+        position: relative;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        gap: 18px;
+        padding: 20px;
+        background: white;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 60px 6%;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-buttons,
+    .hero-stats {
+        justify-content: center;
+    }
+
+    .hero-stats {
+        gap: 22px;
+        flex-wrap: wrap;
+    }
+
+    .hero-image {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .hero-image img {
+        height: 300px;
+    }
+
+    .course-container {
+        flex-direction: column;
+    }
+
+    .about,
+    .courses,
+    .contact {
+        padding: 65px 6%;
+    }
+
+    .about h2,
+    .courses h2,
+    .contact h2 {
+        font-size: 28px;
+    }
+
+}
+
+/* End of main mobile media query */
+    
+/* Admission Enquiry Form */
+
+.contact {
+    background: #ffffff;
+}
+
+#enquiry-form {
+    max-width: 550px;
+    margin: 35px auto 0;
+    padding: 35px;
+    background: #f4f7fc;
+    border-radius: 15px;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #17233c;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #d5dce8;
+    border-radius: 7px;
+    font-size: 15px;
+    outline: none;
+    background: white;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #f28c28;
+}
+
+#enquiry-form button {
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+#form-message {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    #enquiry-form {
+        padding: 22px;
+    }
+}
+
+
+/* Student Testimonials */
+
+.testimonials {
+    padding: 90px 8%;
+    text-align: center;
+    background: #ffffff;
+}
+
+.testimonials h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.testimonial-intro {
+    color: #687386;
+    margin-bottom: 40px;
+}
+
+.testimonial-container {
+    display: flex;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.testimonial-card {
+    flex: 1;
+    background: #f4f7fc;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-8px);
+}
+
+.stars {
+    color: #f28c28;
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+
+.testimonial-card p {
+    color: #687386;
+    line-height: 1.8;
+    margin-bottom: 22px;
+}
+
+.testimonial-card h3 {
+    color: #17233c;
+    margin-bottom: 5px;
+}
+
+.testimonial-card span {
+    color: #f28c28;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .testimonial-container {
+        flex-direction: column;
+    }
+
+    .testimonials {
+        padding: 65px 6%;
+    }
+
+    .testimonials h2 {
+        font-size: 28px;
+    }
+
+    } /* Close Testimonials mobile section */
+
+/* Floating WhatsApp Button */
+
+.whatsapp-float {
+    position: fixed !important;
+    bottom: 25px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    z-index: 9999;
+    transition: 0.3s ease;
+}
+
+.whatsapp-float img {
+    display: block;
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+.whatsapp-float:hover {
+    transform: translateY(-5px);
+}
+
+
